@@ -163,7 +163,7 @@ class Empresa{
 	}
 	
 	// função GastoSetor (retorna o gasto com funcionário de cada setor e aponta o setor com mais gasto)
-	static void GastoSetor() {
+	void GastoSetor() {
 		float GastoRequisitos = 0;
 		float GastoModelagens = 0;
 		float GastoCodificacao = 0;
@@ -893,7 +893,7 @@ public class Main{
 			
 			// (9) Função em andamento:
 			else if(UserInput.equals("9")) {
-				Empresa.GastoSetor();
+				empresa.GastoSetor();
 			}
 			else if(UserInput.equals("10")) {System.out.println("Finalizando o programa...");break;}
 			else {
